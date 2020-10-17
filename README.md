@@ -1,5 +1,9 @@
-### Hi there 👋
+### Hi there, I'm Ankit 👋.
+![](https://visitor-badge.laobi.icu/badge?page_id=phondani0.phondani0)   ![GitHub followers](https://img.shields.io/github/followers/phondani0?label=Follow&style=social)
 
+<a href="https://www.linkedin.com/in/phondani0/">
+  <img align="left" alt="Linkedin" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+</a>
 <!--
 **phondani0/phondani0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
