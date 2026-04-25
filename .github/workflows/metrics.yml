@@ -17,6 +17,45 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, community, repositories, metadata
-          filename: github-metrics.svg
-          optimize: yes
+
+          # Core options
+          user: ${{ github.repository_owner }}
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          
+          # Isometric calendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_main: yes
+          
+          # PageSpeed Insights
+          plugin_pagespeed: yes
+          plugin_pagespeed_url: https://your-portfolio-url.com # Replace with your actual website URL
+          
+          # Coding habits and recent activity
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          
+          # Mastered technologies and topics (Icons)
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          # Note: To show specific icons here, you need to add topics to your GitHub repositories or profile repository
+          
+          # Suggested tracks (Music)
+          plugin_music: yes
+          plugin_music_provider: apple # Change to 'spotify' if preferred
+          plugin_music_mode: playlist
+          plugin_music_playlist: https://music.apple.com/us/playlist/your-playlist-url # Replace with your playlist URL
+          
+          # Most used languages
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, jupyter notebook # Add any you want to exclude
+          plugin_languages_details: percentage
+          plugin_languages_indepth: yes # Analyzes all repositories, not just the ones you own
+          
+          # Projects
+          plugin_projects: yes
+          plugin_projects_limit: 1
