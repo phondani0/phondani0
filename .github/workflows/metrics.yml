@@ -30,7 +30,7 @@ jobs:
           
           # PageSpeed Insights
           plugin_pagespeed: yes
-          plugin_pagespeed_url: https://your-portfolio-url.com # Replace with your actual website URL
+          plugin_pagespeed_url: https://ankitphondani.com
           
           # Coding habits and recent activity
           plugin_habits: yes
@@ -48,7 +48,7 @@ jobs:
           plugin_music: yes
           plugin_music_provider: apple # Change to 'spotify' if preferred
           plugin_music_mode: playlist
-          plugin_music_playlist: https://music.apple.com/us/playlist/your-playlist-url # Replace with your playlist URL
+          plugin_music_playlist: https://music.apple.com/us/playlist/ed-sheeran-essentials/pl.3b75f58905aa4486b08432f0e98846e8
           
           # Most used languages
           plugin_languages: yes
