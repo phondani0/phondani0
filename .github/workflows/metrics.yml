@@ -39,8 +39,8 @@ jobs:
           # plugin_habits_charts: yes
 
           # Mastered technologies and topics (Icons)
-          plugin_topics: yes
-          plugin_topics_mode: icons
+          # plugin_topics: yes
+          # plugin_topics_mode: icons
           
           # ----------------------------------------------------
           # RIGHT COLUMN PLUGINS
@@ -55,10 +55,10 @@ jobs:
           plugin_isocalendar_duration: full-year
           
           # Suggested tracks (Music)
-          plugin_music: yes
-          plugin_music_provider: spotify 
-          plugin_music_mode: playlist
-          plugin_music_playlist: https://open.spotify.com/embed/playlist/37i9dQZF1DWWxPM4nWdhyI
+          # plugin_music: yes
+          # plugin_music_provider: spotify 
+          # plugin_music_mode: playlist
+          # plugin_music_playlist: https://open.spotify.com/embed/playlist/37i9dQZF1DWWxPM4nWdhyI
           
           # Most used languages
           plugin_languages: yes
