@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -30,6 +31,7 @@ jobs:
           
           # PageSpeed Insights
           plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }} # Added this line!
           plugin_pagespeed_url: https://ankitphondani.com
           
           # Coding habits and recent activity
@@ -42,20 +44,18 @@ jobs:
           # Mastered technologies and topics (Icons)
           plugin_topics: yes
           plugin_topics_mode: icons
-          # Note: To show specific icons here, you need to add topics to your GitHub repositories or profile repository
           
           # Suggested tracks (Music)
           plugin_music: yes
-          plugin_music_provider: apple # Change to 'spotify' if preferred
+          plugin_music_provider: apple 
           plugin_music_mode: playlist
           plugin_music_playlist: https://music.apple.com/us/playlist/ed-sheeran-essentials/pl.3b75f58905aa4486b08432f0e98846e8
           
           # Most used languages
           plugin_languages: yes
-          plugin_languages_ignored: html, css, jupyter notebook # Add any you want to exclude
+          plugin_languages_ignored: html, css, jupyter notebook 
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes # Analyzes all repositories, not just the ones you own
+          plugin_languages_indepth: yes 
           
           # Projects
-          plugin_projects: yes
-          plugin_projects_limit: 1
+          plugin_projects: no # Set to 'no' if you don't use GitHub project boards!
